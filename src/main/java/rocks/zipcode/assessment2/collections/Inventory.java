@@ -35,13 +35,13 @@ public class Inventory {
      */
     public void addItemToInventory(String item) {
 
-
+    addItemToInventory(item);
     }
     /**
      * @param item - decrement the number of this item in stock by 1
      */
     public void removeItemFromInventory(String item) {
-
+    removeItemFromInventory(item);
     }
 
     /**
@@ -49,6 +49,7 @@ public class Inventory {
      * @return - return the number of items
      */
     public Integer getItemQuantity(String item) {
-        return null;
+
+     return null;
     }
 }
