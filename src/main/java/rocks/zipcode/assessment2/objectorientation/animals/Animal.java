@@ -13,7 +13,8 @@ public class Animal extends Ageable {
     public Person owner;
 
     public Animal() {
-
+        this.id = null;
+        this.owner = new Person();
     }
 
     /**
@@ -44,6 +45,6 @@ public class Animal extends Ageable {
     }
 
     public Address getAddress() {
-        return getAddress();
+        return owner.getAddress();
     }
 }

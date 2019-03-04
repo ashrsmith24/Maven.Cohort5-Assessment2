@@ -83,5 +83,17 @@ public class Address extends Person{
         else
             return true;
 
+
+    }
+
+    @Override
+    public String toString() {
+        return "Address{" +
+                "addressLine1='" + addressLine1 + '\'' +
+                ", addressLine2='" + addressLine2 + '\'' +
+                ", city='" + city + '\'' +
+                ", state='" + state + '\'' +
+                ", zipcode='" + zipcode + '\'' +
+                '}';
     }
 }
