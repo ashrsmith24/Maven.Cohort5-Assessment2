@@ -3,7 +3,7 @@ package rocks.zipcode.assessment2.objectorientation;
 /**
  * @author leon on 28/11/2018.
  */
-public class Address {
+public class Address extends Person{
     private String addressLine1;
     private String addressLine2;
     private String city;
@@ -11,7 +11,12 @@ public class Address {
     private String zipcode;
 
 
-    public Address() {
+    public Address(){
+         addressLine1 = "";
+         addressLine2 = "";
+         city = "";
+        state =  "";
+        zipcode = "";
     }
 
     /**

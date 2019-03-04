@@ -10,7 +10,7 @@ public class StringUtils {
      * @return `stringToBePadded` flushed right by left-padding
      */
     public static String padLeft(String stringToBePadded, int amountOfPadding) {
-        return null;
+        return String.format("%1$" + amountOfPadding + "s", stringToBePadded);
     }
 
     /**
@@ -19,16 +19,22 @@ public class StringUtils {
      * @return `stringToBePadded` flushed right by right-padding
      */
     public static String padRight(String stringToBePadded, int amountOfPadding) {
-        return null;
-    }
+        return String.format("%1$-" + amountOfPadding + "s", stringToBePadded);
 
-    /**
-     * @param stringToBeRepeated   - string value to be repeated
-     * @param numberOfTimeToRepeat - number of times to repeat `stringToBeRepeated`
-     * @return the string repeated and concatenated `n` times
-     */
+
+//
+
+    }
+        /**
+         * @param stringToBeRepeated   - string value to be repeated
+         * @param numberOfTimeToRepeat - number of times to repeat `stringToBeRepeated`
+         * @return the string repeated and concatenated `n` times
+         */
     public static String repeatString(String stringToBeRepeated, int numberOfTimeToRepeat) {
-        return null;
+        StringBuilder newSB = new StringBuilder();
+        for (int j = 0; j < numberOfTimeToRepeat; j++)
+            newSB.append(stringToBeRepeated);
+        return newSB.toString();
     }
 
     /**

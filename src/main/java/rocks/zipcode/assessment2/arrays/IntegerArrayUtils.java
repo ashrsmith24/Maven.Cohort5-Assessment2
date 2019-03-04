@@ -45,24 +45,23 @@ public class IntegerArrayUtils {
      * @return identical array with even-values incremented by 1 and odd-values decremented by 1
      */
     public static Integer[] incrementEvenDecrementOdd(Integer[] integerArray) {
-             return null;
+    return null;
     }
+
 
     /**
      * @param integerArray - array to be evaluated
      * @return identical array with even-values incremented by 1
      */
     public static Integer[] incrementEven(Integer[] integerArray) {
-    return null;
-
-    }
-
-    /**
-     * @param input - array to be evaluated
-     * @return identical array with odd-values decremented by 1
-     */
-    public static Integer[] decrementOdd(Integer[] input) {
-
         return null;
     }
-}
+            /**
+             * @param input - array to be evaluated
+             * @return identical array with odd-values decremented by 1
+             */
+            public static Integer[] decrementOdd (Integer[]input){
+
+                return null;
+            }
+        }

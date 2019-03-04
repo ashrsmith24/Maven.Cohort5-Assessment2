@@ -22,6 +22,8 @@ public class Person {
     }
 
     public Person() {
+        id = Long.MIN_VALUE;
+
 
 
     }

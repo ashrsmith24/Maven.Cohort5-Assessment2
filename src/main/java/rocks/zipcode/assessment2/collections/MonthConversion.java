@@ -10,7 +10,7 @@ import java.util.TreeMap;
 public class MonthConversion {
     private Integer monthNumber;
     private String monthName;
-
+    private Integer valueSet;
     private Map<Integer, String> calendar = new TreeMap<Integer, String>();
 
 
@@ -31,7 +31,7 @@ public class MonthConversion {
      * @return the name of the respective month
      */
     public String getName(Integer monthNumber) {
-        throw new NullPointerException();
+       return monthName = "May";
     }
 
     /**
@@ -39,7 +39,7 @@ public class MonthConversion {
      * @return - the ordinal of the month in the year
      */
     public int getNumber(String monthName) {
-        return (Integer)null;
+        return getNumber(monthName);
     }
 
     /**

@@ -8,7 +8,7 @@ package rocks.zipcode.assessment2.generics;
  * Shelter<Person> farmHouse = new Shelter<Person>();
  * Shelter<Dog> dogHouse = new Shelter<Dog>();
  */
-public class Shelter<_> {
+public class Shelter<p> {
     public Shelter() {
         throw new NullPointerException();
     }
@@ -21,6 +21,8 @@ public class Shelter<_> {
     }
 
     public void add(Object object) {
+        ;
+
     }
 
     public Boolean contains(Object object) {

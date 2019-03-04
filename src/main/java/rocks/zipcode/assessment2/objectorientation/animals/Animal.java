@@ -44,6 +44,6 @@ public class Animal extends Ageable {
     }
 
     public Address getAddress() {
-        return null;
+        return getAddress();
     }
 }
