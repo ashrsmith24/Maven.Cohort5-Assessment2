@@ -6,7 +6,7 @@ package rocks.zipcode.assessment2.fundamentals;
 public class StringUtils {
     /**
      * @param stringToBePadded - string value to be flushed right
-     * @param amountOfPadding - amount of padding to be flushed left
+     * @param amountOfPadding  - amount of padding to be flushed left
      * @return `stringToBePadded` flushed right by left-padding
      */
     public static String padLeft(String stringToBePadded, int amountOfPadding) {
@@ -15,7 +15,7 @@ public class StringUtils {
 
     /**
      * @param stringToBePadded - string value to be flushed left
-     * @param amountOfPadding - amount of padding to be flushed right
+     * @param amountOfPadding  - amount of padding to be flushed right
      * @return `stringToBePadded` flushed right by right-padding
      */
     public static String padRight(String stringToBePadded, int amountOfPadding) {
@@ -23,7 +23,7 @@ public class StringUtils {
     }
 
     /**
-     * @param stringToBeRepeated - string value to be repeated
+     * @param stringToBeRepeated   - string value to be repeated
      * @param numberOfTimeToRepeat - number of times to repeat `stringToBeRepeated`
      * @return the string repeated and concatenated `n` times
      */
@@ -36,7 +36,13 @@ public class StringUtils {
      * @return - true if string only contains alpha characters
      */
     public static Boolean isAlphaString(String string) {
-        return null;
+        if (string == null) return false;
+        for (char c : string.toCharArray()) {
+            if (!Character.isLetter(c)) {
+                return false;
+            }
+        }
+        return true;
     }
 
     /**
@@ -44,7 +50,12 @@ public class StringUtils {
      * @return - true if string only contains numeric characters
      */
     public static Boolean isNumericString(String string) {
-        return null;
+        try {
+            double d = Double.parseDouble(string);
+        } catch (NumberFormatException | NullPointerException nfe) {
+            return false;
+        }
+        return true;
     }
 
     /**
@@ -52,6 +63,15 @@ public class StringUtils {
      * @return - true if string only contains special characters
      */
     public static Boolean isSpecialCharacterString(String string) {
-        return null;
+        String str = "";
+        String specialCharacters = "[" + "-/@#!*$%^&.'_+={}()" + "]+";
+
+        if (str.matches(specialCharacters)) {
+            return true;
+        } else {
+
+            return false;
+        }
     }
 }
+
