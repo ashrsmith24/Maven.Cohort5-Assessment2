@@ -17,11 +17,11 @@ public class Shelter<p> {
      * @return the number of item in the shelter
      */
     public int size() {
-        return -1;
+        return size();
     }
 
     public void add(Object object) {
-        ;
+
 
     }
 

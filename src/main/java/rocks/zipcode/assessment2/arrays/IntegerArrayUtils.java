@@ -54,7 +54,14 @@ public class IntegerArrayUtils {
      * @return identical array with even-values incremented by 1
      */
     public static Integer[] incrementEven(Integer[] integerArray) {
-        return null;
+
+        Integer[] newArray = new Integer[integerArray.length];
+        for (int i = 0; i < integerArray.length; i++) {
+            if (integerArray[i] % 2 == 0) {
+                integerArray[i] = newArray[i] + 1;
+            }
+        }
+        return newArray;
     }
             /**
              * @param input - array to be evaluated
